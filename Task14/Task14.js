@@ -4,7 +4,7 @@
 
 // sumStrings('1','2') // => '3'
 
-function sumStrings(a,b) {
+function sumStrings(a, b) {
   let first = a.replace('/^0+/', '').split('')
   let second = b.replace('/^0+/', '').split('')
 
@@ -49,7 +49,6 @@ function sumStrings(a,b) {
       result.push(Number(splitSum[1]))
       carry = Number(splitSum[0])
     }
-
   }
 
   if (carry > 0) {
